@@ -38,6 +38,32 @@ After VM is created, set Client-1’s DNS settings to DC-1’s Private IP addres
 
 <img width="131" alt="image" src="https://github.com/user-attachments/assets/4ebe9341-d0a4-4430-867a-fedcf48ad8e1">
 
+3. In network settings, go to the NIC/IP configuration. It should say (client-1178-1 (primary) / ipconfig1
+
+![image](https://github.com/user-attachments/assets/069d188c-1ba8-4e4b-b48a-9a3f05663ede)
+
+In the NIC setting on the left side of the display, you will go to DNS servers settings. In the DNS server settings, go to DNS servers customs and add the private Ip address. 
+Remember your private Ip address is in your Client-1’s network settings. HIT SAVE!
+
+![image](https://github.com/user-attachments/assets/dc8f537d-df82-4182-843f-27aa425590a2)
+
+From the azure portal, restart the client-1 VM. After the restart, log back into client-1 VM. Go to powershell and ping your DC-1 private IP address. 
+To ensure a success ping type in ipconfig /all. The output should show DC-1 private Ip address. 
+
+![image](https://github.com/user-attachments/assets/437c1a4b-a802-4a73-9ba0-a595c6d94af5)
+![image](https://github.com/user-attachments/assets/1d283e19-e385-44cb-8269-10f1326fecca)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
